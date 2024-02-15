@@ -15,8 +15,14 @@ Tuples :
 Tuple is a data structure that allows you to store a fixed-size collection of elements of different types. 
 Unlike arrays where elements can be of the same type and can be accessed using numerical indices, tuples allow you to specify the type of each element explicitly and access them by their position within the tuple.
 
+Interfaces :
+Interfaces are mainly used to define the shape or structure of an object. They describe the properties and methods that an object should have.
+Interfaces support inheritance. You can extend one interface from another using the extends keyword.
+When you declare multiple interfaces with the same name, TypeScript merges them into a single interface.
 
-
+Difference between Interfaces and Type Aliases :
+Interfaces are mainly for defining object shapes, supporting inheritance, and declaration merging. They are open for extension and used when defining the structure of objects.
+Type aliases are for creating aliases for any type, including primitives, unions, intersections, and complex types. They are more flexible for defining complex types but cannot be extended or used for inheritance.
 
 
 
