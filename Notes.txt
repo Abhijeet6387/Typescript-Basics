@@ -1,0 +1,23 @@
+Types in TS :
+Number, Boolean, String, Null, Undefined, Void, Object, Arrays, Tuples, Never, Unknown...
+
+Syntax :
+let variableName : type = value
+
+Any Keyword :
+When you don't specify a type, and typescript can't infer it from the context, the compiler will typically default to "any"
+Avoid using it, as "any" is not type-checked. Use "noImplicitAny" to flag an implicit "any" as an error.
+
+Never :
+The never type represents values which are never observed. In a return type, this means that the function throws an exception or terminates execution of the program.
+
+Tuples :
+Tuple is a data structure that allows you to store a fixed-size collection of elements of different types. 
+Unlike arrays where elements can be of the same type and can be accessed using numerical indices, tuples allow you to specify the type of each element explicitly and access them by their position within the tuple.
+
+
+
+
+
+
+
