@@ -24,6 +24,21 @@ Difference between Interfaces and Type Aliases :
 Interfaces are mainly for defining object shapes, supporting inheritance, and declaration merging. They are open for extension and used when defining the structure of objects.
 Type aliases are for creating aliases for any type, including primitives, unions, intersections, and complex types. They are more flexible for defining complex types but cannot be extended or used for inheritance.
 
+Abstract Classes V/s Interfaces :
+Abstract classes and interfaces in TypeScript are both mechanisms for defining contracts that classes must adhere to.
 
+Abstract Classes:
+Definition: Abstract classes are classes that cannot be instantiated directly. They are primarily designed to be subclassed, serving as blueprints for other classes.
+Methods: Abstract classes can have both abstract and concrete methods. Abstract methods are declared without an implementation and must be implemented by subclasses. 
+        Concrete methods have implementations and can optionally be overridden by subclasses.
+Constructor: Abstract classes can have constructors, which are invoked when subclasses are instantiated. Constructors of abstract classes can initialize properties or perform other setup tasks.
+Access Modifiers: Abstract classes can have members (properties and methods) with public, protected, or private access modifiers.
+Single Inheritance: TypeScript supports single inheritance, meaning a subclass can inherit from only one abstract class.
 
-
+Interfaces:
+Definition: Interfaces are purely structural contracts. They define the shape of an object, specifying the properties and methods it must have, without providing any implementation.
+Methods: Interfaces can only declare method signatures (names, parameters, and return types) but not provide implementations. 
+        Classes that implement interfaces must provide implementations for all the methods declared in the interface.
+No Constructors: Interfaces cannot contain constructor definitions because they are purely structural and do not provide implementations.
+No Access Modifiers: Interfaces cannot specify access modifiers for members. All members are implicitly public and cannot have a private or protected modifier.
+Multiple Inheritance: TypeScript supports multiple inheritance through interfaces. A class can implement multiple interfaces, inheriting the shape from all of them.
