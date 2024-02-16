@@ -42,3 +42,7 @@ Methods: Interfaces can only declare method signatures (names, parameters, and r
 No Constructors: Interfaces cannot contain constructor definitions because they are purely structural and do not provide implementations.
 No Access Modifiers: Interfaces cannot specify access modifiers for members. All members are implicitly public and cannot have a private or protected modifier.
 Multiple Inheritance: TypeScript supports multiple inheritance through interfaces. A class can implement multiple interfaces, inheriting the shape from all of them.
+
+Generics :
+Generics in TypeScript allow you to create reusable components that can work with various types. 
+They enable you to define functions, classes, and interfaces with placeholders for the types of parameters, return values, or properties, making your code more flexible and maintainable.
