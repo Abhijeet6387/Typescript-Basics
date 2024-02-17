@@ -46,3 +46,12 @@ Multiple Inheritance: TypeScript supports multiple inheritance through interface
 Generics :
 Generics in TypeScript allow you to create reusable components that can work with various types. 
 They enable you to define functions, classes, and interfaces with placeholders for the types of parameters, return values, or properties, making your code more flexible and maintainable.
+
+Instance of :
+"instanceof" operator is used to check whether an object is an instance of a particular class or constructor function. 
+It returns true if the object is an instance of the specified class or constructor, and false otherwise.
+
+Type Predicates :
+Type predicates allows you to define custom functions that act as type guards. 
+These functions take an input parameter and return a boolean value indicating whether the input is of a specific type. 
+If TypeScript can narrow down the type of a variable based on a type predicate, it will use that narrowed type in the scope where the type predicate is called.
