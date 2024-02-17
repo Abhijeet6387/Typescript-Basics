@@ -55,3 +55,12 @@ Type Predicates :
 Type predicates allows you to define custom functions that act as type guards. 
 These functions take an input parameter and return a boolean value indicating whether the input is of a specific type. 
 If TypeScript can narrow down the type of a variable based on a type predicate, it will use that narrowed type in the scope where the type predicate is called.
+
+Discriminated Unions :
+A discriminated union is a type pattern used to combine multiple types into one union where each type includes a common discriminant property. 
+This discriminant property is a literal type (such as a string or number) that uniquely identifies each subtype within the union.
+
+Exhaustive Checking :
+Exhaustive checking ensures that all possible cases of a discriminated union are handled in a switch statement or conditional statement.
+The default case is used to assert that the switch statement is exhaustive. 
+In the example, By assigning shape to a variable with the never type, TypeScript ensures that it's impossible to reach this code block, providing compile-time safety against missing cases.
